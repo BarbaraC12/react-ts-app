@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
 import Navbar from './component/Navbar'
 import Auth from './component/Auth'
+import _Footer from './component/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,8 @@ function App() {
 			<div>
 				<Navbar />
 				{/* <Canvas draw={draw}/> */}
+				<div></div>
+				<_Footer />
 			</div>
 			<Routes>
 				<Route path="/auth" element={<Auth />}/>
