@@ -16,19 +16,22 @@ const ChatView: React.FC = () => {
     };
 
     return (
-        <div>
-            <h2>Chat</h2>
+        <div className="container">
+            <h2 className="text-center">Chat</h2>
             <form onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    value={newMessage}
-                    onChange={e => setNewMessage(e.target.value)}
-                />
-                <button type="submit">Send</button>
+                <div className="form-group">
+                    <input
+                        type="text"
+                        className="form-control"
+                        value={newMessage}
+                        onChange={e => setNewMessage(e.target.value)}
+                    />
+                </div>
+                <button type="submit" className="btn btn-primary btn-block">Send</button>
             </form>
-            <ul>
+            <ul className="list-group mt-3">
                 {messages.map((message, index) => (
-                    <li key={index}>
+                    <li key={index} className="list-group-item">
                         <strong>{message.author}:</strong> {message.message}
                     </li>
                 ))}
