@@ -1,6 +1,7 @@
 import {useState} from "react";
 import { Navbar, Nav, Container, Offcanvas} from "react-bootstrap";
 import ProjectName from "../var/ProjectName";
+import "../style/Navbar.css";
 
 const _Nav = () => {
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
 import FormInput from '../component/FormInput'
 import ButtonRequest from '../component/ButtonRequest'
+import '../style/Auth.css'
 
 const Auth = () => {
 

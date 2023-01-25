@@ -1,4 +1,5 @@
 import Mate from '../component/Mate';
+import '../style/About.css';
 
 const About = () => {
 	return (

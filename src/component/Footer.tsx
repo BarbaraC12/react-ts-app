@@ -1,4 +1,6 @@
 import ProjectName from '../var/ProjectName';
+import React from 'react';
+import '../style/Footer.css';
 
 export default function App() {
   return (
