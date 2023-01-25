@@ -1,5 +1,6 @@
-import React, {useState} from "react";
-import { Navbar, Nav, Container, Offcanvas, NavDropdown, Form, Button} from "react-bootstrap";
+import {useState} from "react";
+import { Navbar, Nav, Container, Offcanvas} from "react-bootstrap";
+import ProjectName from "../var/ProjectName";
 
 const _Nav = () => {
 
@@ -14,7 +15,7 @@ const _Nav = () => {
 		<>
 			<Nav.Link href="#leaderboard">Learderboard</Nav.Link>
             <Nav.Link href="#game">Play</Nav.Link>
-            <Nav.Link href="#team">About Us</Nav.Link>
+            <Nav.Link href="about">About Us</Nav.Link>
 				<br /><br />
 			<Nav.Link href="#profil">
             	Profil
@@ -34,7 +35,7 @@ const _Nav = () => {
 	else {
 	return (
 		<>
-			<Nav.Link href="#team">About Us</Nav.Link>
+			<Nav.Link href="about">About Us</Nav.Link>
 			<br /><br />
 			<Nav.Link href="#auth" onClick={changeAuthMode}>Sign In</Nav.Link>
 			<Nav.Link href="auth">Sign Up</Nav.Link>
@@ -50,7 +51,7 @@ const _Navbar = () => {
       {["false"].map((expand) => (
         <Navbar key={expand} bg="dark" variant="dark" expand={expand} className="mb-0">
           <Container fluid>
-            <Navbar.Brand href="/#">FT_PONG</Navbar.Brand>
+            <Navbar.Brand href="/#"><ProjectName /></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}

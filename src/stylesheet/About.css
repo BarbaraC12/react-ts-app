@@ -1,0 +1,110 @@
+
+/* About page section */
+.about {
+  min-width: 600px;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+  background-color: rgb(83, 156, 132);
+}
+
+.about-header {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about-cards {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  min-width: 600px;
+  width: 1000px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding: 0.3rem;
+}
+
+.card-l {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding-right: 2vw;
+  text-align: right;
+  font-family: arial;
+  display: flex;
+  align-items: left;
+}
+
+.card-r {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  padding-left: 2vw;
+  text-align: left;
+  font-family: arial;
+  display: flex;
+  align-items: right;
+}
+
+.h2-about {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  margin-top: 20px;
+  padding: 0.3rem;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+.title {
+  color: rgb(36, 35, 71);
+}
+
+/* @media screen and (min-width: 600px) {
+
+} */
+
+.git{
+  outline: 0;
+  align-items: center;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.git:hover {
+  background-color: #ffffff;
+  border-color: #333333;
+  color: #333333;
+}
+
+.barbara {
+  background: left/contain content-box border-box no-repeat url('https://avatars.githubusercontent.com/u/55756205?v=4') white;
+}
+
+.mate2 {
+  background: right/contain content-box border-box no-repeat url('https://avatars.githubusercontent.com/u/55756205?v=4') white;
+}
+
+.mate3 {
+  background: left/contain content-box border-box no-repeat url('https://avatars.githubusercontent.com/u/55756205?v=4') white;
+}
+
+.mate4 {
+  background: right/contain content-box border-box no-repeat url('https://avatars.githubusercontent.com/u/55756205?v=4') white;
+}

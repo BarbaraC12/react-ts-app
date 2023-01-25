@@ -1,5 +1,3 @@
-import { Placeholder } from "react-bootstrap"
-
 interface IRequestProps {
     type: string,
     className: string,

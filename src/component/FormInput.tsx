@@ -1,4 +1,3 @@
-
 interface IFormInputProps {
     label: string,
     type: string,
