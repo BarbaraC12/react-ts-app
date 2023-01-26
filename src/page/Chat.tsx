@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 interface Message {
-    author: string;
-    message: string;
+    author: string,
+    message: string
 }
 
 const ChatView: React.FC = () => {
@@ -27,7 +27,7 @@ const ChatView: React.FC = () => {
                         onChange={e => setNewMessage(e.target.value)}
                     />
                 </div>
-                <button type="submit" className="btn btn-primary btn-block">Send</button>
+                <button type="submit" className="btn btn-warning btn-block">Send</button>
             </form>
             <ul className="list-group mt-3">
                 {messages.map((message, index) => (
